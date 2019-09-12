@@ -1,63 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="TOYOTA" duration-ms="147" started-at="2019-09-11T23:10:33Z" finished-at="2019-09-11T23:10:34Z">
+  <suite name="Default suite" duration-ms="84" started-at="2019-09-12T22:42:26Z" finished-at="2019-09-12T22:42:26Z">
     <groups>
+      <group name="Smoke">
+        <method signature="Day3.MobileLoginCarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="MobileLoginCarLoan" class="Test.Day3"/>
+      </group> <!-- Smoke -->
+      <group name="First">
+        <method signature="Day3.MobileSignInCarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="MobileSignInCarLoan" class="Test.Day3"/>
+        <method signature="Day3.WebLoginCarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="WebLoginCarLoan" class="Test.Day3"/>
+      </group> <!-- First -->
     </groups>
-    <test name="Sales Department" duration-ms="147" started-at="2019-09-11T23:10:33Z" finished-at="2019-09-11T23:10:34Z">
-      <class name="Test.Day2">
-        <test-method status="PASS" signature="Test_3()[pri:0, instance:Test.Day2@66d2e7d9]" name="Test_3" duration-ms="2" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_3 -->
-      </class> <!-- Test.Day2 -->
+    <test name="Default test" duration-ms="84" started-at="2019-09-12T22:42:26Z" finished-at="2019-09-12T22:42:26Z">
       <class name="Test.Day3">
-        <test-method status="PASS" signature="LoginAPICarLoan()[pri:0, instance:Test.Day3@1efbd816]" name="LoginAPICarLoan" duration-ms="4" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAPICarLoan -->
-        <test-method status="PASS" signature="MobileLoginCarLoan()[pri:0, instance:Test.Day3@1efbd816]" name="MobileLoginCarLoan" duration-ms="6" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
+        <test-method status="PASS" signature="MobileLoginCarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="MobileLoginCarLoan" duration-ms="17" started-at="2019-09-12T15:42:26Z" finished-at="2019-09-12T15:42:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileLoginCarLoan -->
-        <test-method status="PASS" signature="MobileSignInCarLoan()[pri:0, instance:Test.Day3@1efbd816]" name="MobileSignInCarLoan" duration-ms="10" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
+        <test-method status="PASS" signature="MobileSignInCarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="MobileSignInCarLoan" duration-ms="4" started-at="2019-09-12T15:42:26Z" finished-at="2019-09-12T15:42:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileSignInCarLoan -->
-        <test-method status="PASS" signature="MobileSignOutCarLoan()[pri:0, instance:Test.Day3@1efbd816]" name="MobileSignOutCarLoan" duration-ms="3" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
+        <test-method status="PASS" signature="MobileSignOutCarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="MobileSignOutCarLoan" duration-ms="2" started-at="2019-09-12T15:42:26Z" finished-at="2019-09-12T15:42:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobileSignOutCarLoan -->
-        <test-method status="PASS" signature="WebLoginCarLoan()[pri:0, instance:Test.Day3@1efbd816]" name="WebLoginCarLoan" duration-ms="4" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
+        <test-method status="PASS" signature="WebLoginCarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="WebLoginCarLoan" duration-ms="3" started-at="2019-09-12T15:42:26Z" finished-at="2019-09-12T15:42:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLoginCarLoan -->
+        <test-method status="PASS" signature="LoginAPICarLoan()[pri:0, instance:Test.Day3@3c09711b]" name="LoginAPICarLoan" duration-ms="3" started-at="2019-09-12T15:42:26Z" depends-on-methods="Test.Day3.MobileLoginCarLoan, Test.Day3.MobileSignInCarLoan" finished-at="2019-09-12T15:42:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICarLoan -->
       </class> <!-- Test.Day3 -->
-      <class name="Test.Day1">
-        <test-method status="PASS" signature="Demo()[pri:0, instance:Test.Day1@6a024a67]" name="Demo" duration-ms="19" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Demo -->
-        <test-method status="PASS" signature="Demo_2()[pri:0, instance:Test.Day1@6a024a67]" name="Demo_2" duration-ms="5" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Demo_2 -->
-      </class> <!-- Test.Day1 -->
-      <class name="Test.Day4">
-        <test-method status="PASS" signature="LoginAPIHomeLoan()[pri:0, instance:Test.Day4@6a2bcfcb]" name="LoginAPIHomeLoan" duration-ms="3" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginAPIHomeLoan -->
-        <test-method status="PASS" signature="MobileLoginHomeLoan()[pri:0, instance:Test.Day4@6a2bcfcb]" name="MobileLoginHomeLoan" duration-ms="3" started-at="2019-09-11T16:10:33Z" finished-at="2019-09-11T16:10:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MobileLoginHomeLoan -->
-        <test-method status="PASS" signature="WebLoginHomeLoan()[pri:0, instance:Test.Day4@6a2bcfcb]" name="WebLoginHomeLoan" duration-ms="3" started-at="2019-09-11T16:10:34Z" finished-at="2019-09-11T16:10:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebLoginHomeLoan -->
-      </class> <!-- Test.Day4 -->
-    </test> <!-- Sales Department -->
-  </suite> <!-- TOYOTA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
