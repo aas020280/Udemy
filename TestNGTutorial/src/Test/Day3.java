@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class Day3 {
 	// TODO Auto-generated method stub
 	
-	@Test
+	@Test(groups= {"First"})
 	
 	public void WebLoginCarLoan()
 	{
@@ -13,7 +13,7 @@ public class Day3 {
 		System.out.println("WebLoginCarLoan");
 	}
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	
 	public void MobileLoginCarLoan() 
 	{
@@ -21,7 +21,7 @@ public class Day3 {
 		System.out.println("MobileLoginCarLoan");
 	}
 	
-	@Test
+	@Test(groups= {"First"})
 	
 	public void MobileSignInCarLoan() 
 	{
@@ -37,7 +37,7 @@ public class Day3 {
 		System.out.println("MobileSignOutCarLoan");
 	}
 
-	@Test
+	@Test(dependsOnMethods= {"MobileSignInCarLoan","MobileLoginCarLoan"})
 	
 	public void LoginAPICarLoan()
 	{
