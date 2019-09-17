@@ -1,5 +1,6 @@
 package Test;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class Day3 {
@@ -29,12 +30,14 @@ public class Day3 {
 		System.out.println("MobileSignInCarLoan");
 	}
 
-	@Test
+	@Test(dataProvider = "getData")
 
-	public void MobileSignOutCarLoan() 
+	public void MobileSignOutCarLoan(String username, String password) 
 	{
 		//Appium
 		System.out.println("MobileSignOutCarLoan");
+		System.out.println(username);
+		System.out.println(password);
 	}
 
 	@Test(dependsOnMethods= {"MobileSignInCarLoan","MobileLoginCarLoan"})
@@ -44,4 +47,6 @@ public class Day3 {
 		//Resr API automation
 		System.out.println("LoginAPICarLoan");
 	}
+	
 }
+
