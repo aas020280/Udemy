@@ -1,6 +1,7 @@
 package Test;
 
 import org.testng.annotations.AfterTest;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
@@ -29,6 +30,7 @@ public class Day1 {
 	public void Demo_2()
 	{
 		System.out.println("By By");
+		Assert.assertTrue(false);
 	}
 	
 }

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression">
+<suite name="Regression" parallel = "tests" thread-count="6">
+  	
+  	<listeners>
+  		<listener class-name = "Test.Listeners"/>
+  	</listeners>
+  
   <test name="Test">
+  
   		<groups>
   			<run>
   				<include name="Smoke"/>
@@ -15,5 +21,6 @@
       <class name="Test.Day4"/>
       <class name="Test.Day3"/>
     </classes>
+  
   </test>
 </suite>
